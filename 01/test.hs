@@ -13,3 +13,9 @@ signum_2 n 	| n < 0 = -1
 head_1 (x:_) = x
 
 tail_1 (_:xs) = xs
+
+lambda_1 = \x -> x + x
+
+add_1 = \x -> (\y -> x + y)
+
+const_1 x = \_ -> x
