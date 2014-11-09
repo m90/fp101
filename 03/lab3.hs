@@ -16,7 +16,7 @@ evens xs = [x | x <- xs, x `mod` 2 == 0]
 -- ===================================
 
 -- complete the following line with the correct type signature for this function
--- squares :: ... 
+squares :: Integer -> [Integer]
 squares n = [x * x | x <- [1..n]]
 
 sumSquares :: Integer -> Integer
@@ -27,7 +27,7 @@ sumSquares n = sum (squares n)
 -- ===================================
 
 -- complete the following line with the correct type signature for this function
--- squares' :: ...
+squares' :: Integer -> Integer -> [Integer]
 squares' m n = [x * x | x <- [n+1..n+m]]
 
 sumSquares' :: Integer -> Integer

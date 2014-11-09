@@ -31,7 +31,7 @@ doubleSecond xs = zipWith (*) xs (cycle [1,2])
 
 sumDigits :: [Integer] -> Integer
 sumDigits [] = 0
-sumDigits (x:xs) = (if x < 10 then x else (x - 10) + 1) + sumDigits xs
+sumDigits (x:xs) = (foldr (+) 0 (toDigits x)) + sumDigits xs
 
 
 -- ===================================
